@@ -9,8 +9,9 @@ import Utils.JsonParser;
 import DAO.Movie;
 
 public class ImdbService {
+
     private String movies;
-    private List<Map<String,String>> moviesList;
+    private List<Map<String, String>> moviesList;
 
     public ImdbService() throws IOException, InterruptedException {
 	this.makeRequest();
@@ -20,7 +21,7 @@ public class ImdbService {
     public ArrayList<Movie> getMoviesList() {
 	ArrayList<Movie> movieListData = new ArrayList<>();
 
-	for (Map<String,String> MovieList: this.moviesList) {
+	for (Map<String, String> MovieList : this.moviesList) {
 	    Movie movie = new Movie(MovieList);
 	    movieListData.add(movie);
 	}
@@ -33,7 +34,7 @@ public class ImdbService {
 	this.movies = client.getData();
     }
 
-    private void parseData(){
+    private void parseData() {
 	JsonParser jsonParser = new JsonParser();
 	this.moviesList = jsonParser.parse(this.movies);
     }

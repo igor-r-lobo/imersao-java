@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.logging.Level;
 import java.util.logging.Logger;
+
 public class HttpClient {
 
     private URI uri;
@@ -19,8 +19,6 @@ public class HttpClient {
 	this.connection();
 	this.log = Logger.getLogger(HttpClient.class.getName());
     }
-
-    ;
 
     public HttpResponse<String> response() {
 	try {

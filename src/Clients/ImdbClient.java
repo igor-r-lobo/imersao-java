@@ -7,7 +7,7 @@ public class ImdbClient {
     private final String endpoint = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
     private HttpClient client;
 
-    public ImdbClient(){
+    public ImdbClient() {
 	this.client = new HttpClient(this.endpoint);
     }
 

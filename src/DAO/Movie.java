@@ -1,7 +1,5 @@
 package DAO;
 
-
-import java.lang.reflect.Array;
 import java.util.Map;
 import java.util.ArrayList;
 
@@ -16,7 +14,7 @@ public class Movie {
     public String id;
     public String imdbRating;
 
-    public Movie(Map<String, String> MovieList){
+    public Movie(Map<String, String> MovieList) {
 	this.title = MovieList.get("title");
 	this.fullTitle = MovieList.get("fullTitle");
 	this.crew = MovieList.get("crew");
@@ -27,7 +25,7 @@ public class Movie {
 	this.imdbRating = MovieList.get("imDbRating");
     }
 
-    public ArrayList<String> getMovieData(){
+    public ArrayList<String> getMovieData() {
 	ArrayList<String> movie = new ArrayList<>();
 	movie.add(this.title);
 	movie.add(this.fullTitle);
