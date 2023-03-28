@@ -23,12 +23,7 @@ public class StickersService {
 	graphics.setColor(Color.ORANGE);
 	graphics.drawString("Figurinha imersao java",150, newHeight - 100);
 	File file = new File("output/" + name + ".png");
-
-	if (!file.exists()){
-	  boolean status = file.mkdirs();
-
-	}
-
+	this.checkDirectory(file);
 	ImageIO.write(newImage, "png", file);
     }
 
@@ -44,5 +39,11 @@ public class StickersService {
 	}
 
 	return null;
+    }
+
+    private void checkDirectory (File file){
+	if (!file.exists()){
+	    file.mkdirs();
+	}
     }
 }
