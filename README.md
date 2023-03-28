@@ -14,6 +14,7 @@ I'm study "imersão java" it's a little course at alura school, here i made some
 - **Simple to Start**
 
 > Clone this repository and build it.
+
 > Now we have a stickers creator for whatsapp.
 
 ## Response
