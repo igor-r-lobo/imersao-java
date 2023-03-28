@@ -1,4 +1,4 @@
-<p style="background-color: #000066" align="center">
+<p>
 <a href="https://www.youtube.com/watch?v=D2NpRPs4CcE"><img src="https://www.alura.com.br/assets/img/imersao-java/imersao-logo.1676983691.svg" alt="Imersao-java"></a>
 </p>
 
