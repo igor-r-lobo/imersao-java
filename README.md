@@ -6,7 +6,7 @@
 
 ## Introduction
 
-I'm study imersão java at alura school, here i made some requests using API from <a href="https://imdb.com/">ImDb</a>.
+I'm study "imersão java" it's a little course at alura school, here i made some requests using API from <a href="https://imdb.com/">ImDb</a>.
 
 
 **Tip**: use **[SDKMan](https://sdkman.io/jdks)** to download JDK.
@@ -14,6 +14,7 @@ I'm study imersão java at alura school, here i made some requests using API fro
 - **Simple to Start**
 
 > Clone this repository and build it.
+> Now we have a stickers creator for whatsapp.
 
 ## Response
 <img src="./img.png" alt="return-example">
