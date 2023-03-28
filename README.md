@@ -6,17 +6,16 @@
 
 ## Introduction
 
-I'm study imersão java at alura school, here i made some request using API from <a href="https://imdb.com/">ImDb</a>.
+I'm study imersão java at alura school, here i made some requests using API from <a href="https://imdb.com/">ImDb</a>.
 
 
 **Tip**: use **[SDKMan](https://sdkman.io/jdks)** to download JDK.
 
 - **Simple to Start**
 
-> Clone this repository and make build it.
+> Clone this repository and build it.
 
 ## Response
-
 <img src="./img.png" alt="return-example">
 
 ## License
