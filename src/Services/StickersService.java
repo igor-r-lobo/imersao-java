@@ -9,9 +9,9 @@ import java.net.URL;
 
 public class StickersService {
 
-    public void create(String img, String name) throws IOException {
+    public void create(String img, String name, String folder) throws IOException {
 
-	BufferedImage image = (BufferedImage) this.downloadImage(img);
+	BufferedImage image = (BufferedImage)this.downloadImage(img);
 	int width = image.getWidth();
 	int height = image.getHeight();
 	int newHeight = height + 200;
@@ -21,8 +21,8 @@ public class StickersService {
 	var font = new Font(Font.SANS_SERIF, Font.BOLD, 82);
 	graphics.setFont(font);
 	graphics.setColor(Color.ORANGE);
-	graphics.drawString("Figurinha imersao java",150, newHeight - 100);
-	File file = new File("output/" + name + ".png");
+	graphics.drawString("Figurinha imersao java", 150, newHeight - 100);
+	File file = new File("output/" + folder + "/" + name + ".png");
 	this.checkDirectory(file);
 	ImageIO.write(newImage, "png", file);
     }
@@ -41,8 +41,8 @@ public class StickersService {
 	return null;
     }
 
-    private void checkDirectory (File file){
-	if (!file.exists()){
+    private void checkDirectory(File file) {
+	if (!file.exists()) {
 	    file.mkdirs();
 	}
     }

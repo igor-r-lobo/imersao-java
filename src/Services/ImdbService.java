@@ -1,7 +1,6 @@
 package Services;
 
 import Clients.ImdbClient;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +12,7 @@ public class ImdbService {
     private String movies;
     private List<Map<String, String>> moviesList;
 
-    public ImdbService() throws IOException, InterruptedException {
+    public ImdbService() {
 	this.makeRequest();
 	this.parseData();
     }
@@ -29,7 +28,7 @@ public class ImdbService {
 	return movieListData;
     }
 
-    private void makeRequest() throws IOException, InterruptedException {
+    private void makeRequest() {
 	ImdbClient client = new ImdbClient();
 	this.movies = client.getData();
     }
