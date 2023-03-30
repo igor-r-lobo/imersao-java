@@ -1,10 +1,8 @@
 import Services.ImdbService;
 import Services.NasaService;
 import Services.StickersService;
-
 import java.io.IOException;
 import java.util.ArrayList;
-
 import DAO.Movie;
 import DAO.Planetary;
 
