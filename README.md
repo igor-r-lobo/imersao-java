@@ -17,6 +17,12 @@ I'm study "imersão java" it's a little course at alura school, here i made some
 
 > Now we have a stickers creator for whatsapp.
 
+> API /imdb/movie
+
+> API /nasa/planetary/today
+
+> API /nasa/planetary?start_date={date}&end_date={date}
+
 ## Response
 <img src="./img.png" alt="return-example">
 
